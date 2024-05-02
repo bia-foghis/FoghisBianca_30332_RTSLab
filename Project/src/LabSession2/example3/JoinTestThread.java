@@ -19,8 +19,6 @@ public class JoinTestThread extends Thread {
             if (t != null) t.join();
 
             System.out.println("Thread "+n+" executing operation.");
-            Thread.sleep(3000);
-            System.out.println("Thread "+n+" has terminated operation.");
 
             for(int i = 1; i <= number; i++){
                 if(number%i == 0){
