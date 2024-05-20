@@ -17,7 +17,6 @@ public class ExecutionThreadM extends Thread{
     }
 
     public void run() {
-        while(true) {
             System.out.println(this.getName() + " - STATE 1");
             this.l1.lock();
             this.l2.lock();
@@ -38,6 +37,7 @@ public class ExecutionThreadM extends Thread{
 
             this.l1.unlock();
             this.l2.unlock();
+
             System.out.println(this.getName() + " - STATE 3");
 
             c.countDown();
@@ -46,6 +46,5 @@ public class ExecutionThreadM extends Thread{
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-        }
     }
 }

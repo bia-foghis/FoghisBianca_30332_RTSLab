@@ -34,5 +34,10 @@ public class ExecutionThread2 extends Thread{
 
         System.out.println(this.getName() + " - STATE 3");
         c.countDown();
+        try {
+            c.await();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }

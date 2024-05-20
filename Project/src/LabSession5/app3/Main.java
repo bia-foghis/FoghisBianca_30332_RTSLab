@@ -9,7 +9,7 @@ public class Main {
         CountDownLatch c = new CountDownLatch(3);
 
         new ExecutionThread1(monitor1, monitor2, c, 7, 2, 3).start();
-        new ExecutionThread2(monitor1, c, 5, 3, 5).start();
-        new ExecutionThread2(monitor2, c, 5, 4, 6).start();
+        new ExecutionThread2(monitor1, c, 7, 3, 5).start();
+        new ExecutionThread2(monitor2, c, 7, 4, 6).start();
     }
 }
