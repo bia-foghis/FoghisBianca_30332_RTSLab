@@ -1,7 +1,5 @@
 package LabSession3.app1;
 
-import LabSession3.app1.ExecutionThread;
-
 public class Main {
     public static void main(String[] args) {
         Integer monitor1 = new Integer(1);

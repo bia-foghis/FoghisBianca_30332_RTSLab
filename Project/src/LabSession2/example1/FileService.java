@@ -34,7 +34,7 @@ public class FileService {
 
         synchronized (this){
             while((iterator = in.readLine()) != null){
-                last= new Date(System.currentTimeMillis()) + " - " + iterator;
+                last = new Date(System.currentTimeMillis()) + " - " + iterator;
             }
             return last;
         }

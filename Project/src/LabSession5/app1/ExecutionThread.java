@@ -1,7 +1,6 @@
 package LabSession5.app1;
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.Semaphore;
-import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.CyclicBarrier;
 
 public class ExecutionThread extends Thread{
